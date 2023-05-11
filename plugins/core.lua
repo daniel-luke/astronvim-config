@@ -8,6 +8,20 @@ return {
         "AstroNvim configuration by Daniel Groothuis",
         "Version: 1.0.0",
       }
+
+      local button = require("astronvim.utils").alpha_button
+      opts.section.buttons.val = {
+        button("LDR n", "  New File  "),
+        button("LDR f f", "  Find File  "),
+        button("LDR f o", "󰈙  Recents  "),
+        button("LDR f w", "󰈭  Find Word  "),
+        button("LDR f '", "  Bookmarks  "),
+        button("LDR S l", "  Last Session  "),
+        button("LDR e", "  Open Explorer  "),
+        button("LDR g g", "  Open Git  "),
+        button("LDR t t", "󱎴  Open System Monitor  "),
+        button("LDR t u", "󰋊  Open Disk Space Analyzer  "),
+      }
       return opts
     end,
   },
