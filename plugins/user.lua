@@ -21,4 +21,13 @@ return {
     "f-person/git-blame.nvim",
     lazy = false,
   },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    config = function()
+      require("catppuccin").setup {
+        transparent_background = true,
+      }
+    end,
+  },
 }
