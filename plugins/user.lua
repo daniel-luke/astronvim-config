@@ -29,7 +29,7 @@ return {
         transparent_background = true,
         color_overrides = {
           all = {
-            surface1 = "#FFFFFF",
+            surface1 = "#666666",
           },
         },
       }
