@@ -30,7 +30,6 @@ return {
         color_overrides = {
           all = {
             surface1 = "#FFFFFF",
-            surface2 = "#FFFFFF",
           },
         },
       }
