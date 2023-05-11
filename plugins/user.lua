@@ -35,4 +35,9 @@ return {
       }
     end,
   },
+  {
+    "cbochs/grapple.nvim",
+    lazy = false,
+    dependencies = { "nvim-lua/plenary.nvim" },
+  },
 }
