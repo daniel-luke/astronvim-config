@@ -27,6 +27,12 @@ return {
     config = function()
       require("catppuccin").setup {
         transparent_background = true,
+        color_overrides = {
+          all = {
+            surface1 = "#FFFFFF",
+            surface2 = "#FFFFFF",
+          },
+        },
       }
     end,
   },
