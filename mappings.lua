@@ -22,10 +22,11 @@ return {
     ["<leader>m"] = { desc = " Bookmarks" },
     ["<leader>z"] = { desc = " Notes" },
     ["<leader>zz"] = { "<cmd>Telekasten panel<cr>", desc = " Notes Panel" },
+    ["<leader>zf"] = { "<cmd>Telekasten find_notes<cr>", desc = "  Find Note By Name" },
     ["<leader>zs"] = { "<cmd>Telekasten search_notes<cr>", desc = " Search Notes" },
     ["<leader>zb"] = { "<cmd>Telekasten show_backlinks<cr>", desc = "󰌷 Seach Backlinks" },
     ["<leader>zn"] = { "<cmd>Telekasten new_note<cr>", desc = " New Note" },
-    ["<leader>zf"] = { "<cmd>Telekasten follow_link<cr>", desc = "󰁔 Follow Link" },
+    ["<leader>zl"] = { "<cmd>Telekasten follow_link<cr>", desc = "󰁔 Follow Link" },
     ["<leader>zd"] = { "<cmd>Telekasten goto_today<cr>", desc = "  Daily Note" },
 
     ["<leader>XXX"] = { "<cmd>call delete(@%) | bdelete!<cr>", desc = "DELETE FILE FROM SYSTEM AND BUFFER" },
