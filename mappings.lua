@@ -19,18 +19,10 @@ return {
     },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
-    ["<leader>t"] = { name = "Tagging", desc = "Tag management" },
-    ["<leader>to"] = {
-      ":GrapplePopup tags<cr>",
-      name = "Tags Overview",
-      desc = "List all known tags in current scope",
-    },
-    ["<leader>ts"] = { name = "Scopes Overview", desc = "List all available tag scopes" },
-    -- quick save
-    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<leader>m"] = { name = " Bookmarks", desc = "Bookmark management" },
   },
   t = {
     -- setting a mapping to false will disable it
-    -- ["<esc>"] = false,
+    -- ["<leader>tf"] = false,
   },
 }
