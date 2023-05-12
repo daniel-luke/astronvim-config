@@ -14,8 +14,18 @@ return {
     lazy = false,
   },
   {
-    "vimwiki/vimwiki",
+    "renerocksai/telekasten.nvim",
+    dependencies = { "nvim-telescope/telescope.nvim" },
     lazy = false,
+    config = function()
+      require("telekasten").setup {
+        home = vim.fn.expand "~/.notes",
+        on_attach = function(bufnr)
+          local map = vim.keymap.set
+          map("n", "<leader>tk", ":Telekasten panel<cr>")
+        end,
+      }
+    end,
   },
   {
     "f-person/git-blame.nvim",

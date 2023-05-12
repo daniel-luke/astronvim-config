@@ -19,10 +19,17 @@ return {
     },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
-    ["<leader>m"] = { name = " Bookmarks", desc = "Bookmark management" },
+    ["<leader>m"] = { desc = " Bookmarks" },
+    ["<leader>z"] = { desc = " Notes" },
+    ["<leader>zz"] = { "<cmd>Telekasten panel<cr>", desc = " Notes Panel" },
+    ["<leader>zs"] = { "<cmd>Telekasten search_notes<cr>", desc = " Search Notes" },
+    ["<leader>zb"] = { "<cmd>Telekasten show_backlinks<cr>", desc = "󰌷 Seach Backlinks" },
+    ["<leader>zn"] = { "<cmd>Telekasten new_note<cr>", desc = " New Note" },
+    ["<leader>zf"] = { "<cmd>Telekasten follow_link<cr>", desc = "󰁔 Follow Link" },
+    ["<leader>zd"] = { "<cmd>Telekasten goto_today<cr>", desc = "  Daily Note" },
   },
   t = {
     -- setting a mapping to false will disable it
-    -- ["<leader>tf"] = false,
+    ["<leader>n"] = false,
   },
 }
