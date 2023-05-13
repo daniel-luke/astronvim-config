@@ -28,11 +28,11 @@ return {
     ["<leader>zn"] = { "<cmd>Telekasten new_note<cr>", desc = " New Note" },
     ["<leader>zl"] = { "<cmd>Telekasten follow_link<cr>", desc = "󰁔 Follow Link" },
     ["<leader>zd"] = { "<cmd>Telekasten goto_today<cr>", desc = "  Daily Note" },
-
     ["<leader>XXX"] = { "<cmd>call delete(@%) | bdelete!<cr>", desc = "DELETE FILE FROM SYSTEM AND BUFFER" },
   },
   t = {
     -- setting a mapping to false will disable it
     ["<leader>n"] = false,
+    ["<esc>"] = { [[<C-\><C-n>]] },
   },
 }
