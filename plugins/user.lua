@@ -73,12 +73,17 @@ return {
     end,
   },
   {
+    "lpoto/telescope-docker.nvim",
+    lazy = false
+  },
+  {
     "nvim-telescope/telescope.nvim",
     config = function(plugin, opts)
       require "plugins.configs.telescope" (plugin, opts)
 
       local telescope = require "telescope"
       telescope.load_extension "bookmarks"
+      telescope.load_extension "docker"
     end,
   },
   {

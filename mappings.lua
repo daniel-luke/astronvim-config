@@ -30,6 +30,7 @@ return {
     ["<leader>zd"] = { "<cmd>Telekasten goto_today<cr>", desc = "  Daily Note" },
     ["<leader>XXX"] = { "<cmd>call delete(@%) | bdelete!<cr>", desc = "DELETE FILE FROM SYSTEM AND BUFFER" },
     ["t"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "open floating terminal" },
+    ["<leader>td"] = { "<cmd>Telescope docker containers<cr>", desc = "view Docker containers" }
   },
   t = {
     -- setting a mapping to false will disable it
