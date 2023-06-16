@@ -28,9 +28,13 @@ return {
     ["<leader>zn"] = { "<cmd>Telekasten new_note<cr>", desc = " New Note" },
     ["<leader>zl"] = { "<cmd>Telekasten follow_link<cr>", desc = "󰁔 Follow Link" },
     ["<leader>zd"] = { "<cmd>Telekasten goto_today<cr>", desc = "  Daily Note" },
+    ["<leader>zr"] = { "<cmd>Telekasten rename_note<cr>", desc = "Rename Note" },
+    ["<leader>zt"] = { "<cmd>Telekasten toggle_todo<cr>", desc = "Toggle Todo" },
+    ["<leader>zi"] = { "<cmd>dVimwikiIndex<cr>", desc = "Index" },
+    ["<leader>zx"] = { "<cmd>VimwikiDeleteFile<cr>", desc = "Delete Note" },
     ["<leader>XXX"] = { "<cmd>call delete(@%) | bdelete!<cr>", desc = "DELETE FILE FROM SYSTEM AND BUFFER" },
     ["t"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "open floating terminal" },
-    ["<leader>td"] = { "<cmd>Telescope docker containers<cr>", desc = "view Docker containers" }
+    ["<leader>td"] = { "<cmd>Telescope docker containers<cr>", desc = "view Docker containers" },
   },
   t = {
     -- setting a mapping to false will disable it

@@ -74,12 +74,12 @@ return {
   },
   {
     "lpoto/telescope-docker.nvim",
-    lazy = false
+    lazy = false,
   },
   {
     "nvim-telescope/telescope.nvim",
     config = function(plugin, opts)
-      require "plugins.configs.telescope" (plugin, opts)
+      require "plugins.configs.telescope"(plugin, opts)
 
       local telescope = require "telescope"
       telescope.load_extension "bookmarks"
@@ -89,7 +89,7 @@ return {
   {
     "rcarriga/nvim-notify",
     config = function(plugin, opts)
-      require "plugins.configs.notify" (plugin, opts)
+      require "plugins.configs.notify"(plugin, opts)
 
       local notify = require "notify"
 
@@ -97,5 +97,9 @@ return {
         background_colour = "#000000",
       }
     end,
+  },
+  {
+    "vimwiki/vimwiki",
+    lazy = false,
   },
 }
